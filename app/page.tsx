@@ -1,3 +1,4 @@
+import Profile from "@/components/Profile";
 import { ThemeToggleButton } from "@/components/ThemeToggleButton";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
     <ThemeToggleButton/>
     Home
+    <Profile/>
     </>
   );
 }

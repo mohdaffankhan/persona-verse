@@ -1,3 +1,4 @@
+"use client";
 import { createContext, useState, ReactNode, useContext } from "react";
 
 const PersonaContext = createContext<any>(null);

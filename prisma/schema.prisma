@@ -23,19 +23,21 @@ model User {
 }
 
 model Persona {
-  id          String   @id @default(cuid())
-  name        String
-  tone        String
-  description String
-  bio         String
-  socials     String?
-  dosdonts    String?
-  avatarUrl   String?
-  talkingStyle String[]
-  user        User?    @relation(fields: [userId], references: [id])
-  userId      String?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id                String   @id @default(cuid())
+  name              String
+  language          String
+  tone              String
+  description       String
+  bio               String
+  behaviouralTraits String
+  socials           String?
+  dosdonts          String?
+  avatarUrl         String?
+  commonPhrases     String?
+  user              User?    @relation(fields: [userId], references: [id])
+  userId            String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
 }
 
 model ChatSessions {
